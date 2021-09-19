@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 22px;
+    background-color:floralwhite;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    color:rgba(9, 71, 241, 0.712) ;
+    height: 60px;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+  }
+  /*  Remove border around button */ 
+.btnHeader {
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    border: 0;
+    outline: 0; 
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.btnHeader:hover {
+
+    background-color: rgb(140, 156, 209);
+    
+  
+    
+}
+
+.btn {
+    border-radius: 12px;
+    border: 0;
+    outline: 0; 
+    background-color: rgb(134, 108, 206);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+
+#mainDiv {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
+
+
+
+#gridContainer {
+   /* width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr;  
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 10px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
+
+#questionDisplay {
+    text-align: center;
+    align-self: baseline;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+    place-self: center;
+    font-size: 30px;
+}
+
+#finalScoreDisplay {
+    
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    font-size: 15px;
+}
+
+
+
+#enterInitials {
+    
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+}
+
+
+#enterInitialsTextArea {
+    
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+    resize: none;
+    
+}
+
+#submitScore {
+    grid-column: 3 / span 1;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: rgb(0, 128, 53);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#start-quiz {
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: rgb(59, 139, 149);
+    place-self: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#answer1 {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: rgb(13, 80, 156);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+#answer2 {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color:   rgb( 13, 80, 156);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-left: 25px;
+
+}
+
+#answer3 {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color:rgb( 13, 80, 156);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+#answer4 {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color:rgb(13, 80, 156);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+#answer1:hover{
+    
+    background-color: rgb(163, 164, 170);
+     
+}
+
+#answer2:hover{
+    
+    background-color: rgb(69, 70, 165);
+  
+}
+
+#answer3:hover{
+    
+    background-color:(69, 70, 165);
+  
+}
+
+#answer4:hover{
+    
+    background-color:(69, 70, 165);
+  
+}
+
+#submitScore:hover{
+    
+    background-color:(69, 70, 165);
+  
+}
+
+
+
+#answerCorrectWrongGrid {
+    /*width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
+    display: grid;
+    grid-template-columns: 4fr;  
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px 10px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+
+}
+
+#answerCorrectWrong {
+    text-align: left;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    
+}
+
+
+/* This will be applied on any screen smaller than 768px */
+@media screen and (max-width: 768px) {
+
+
+    
+    #answer1:hover{
+        
+        background-color: rgb(35, 95, 82);
+        
+    }
+
+    #answer2:hover{
+        
+        background-color: rgb(35, 95, 82);
+    
+    }
+
+    #answer3:hover{
+        
+        background-color: rgb(35, 95, 82);
+    
+    }
+
+    #answer4:hover{
+        
+        background-color: rgb(35, 95, 82);
+    
+    }
+
+    #submitScore:hover{
+        
+        background-color: purple;
+    
+    }
+
+
+
+    #questionDisplay {
+        font-size: 25px;
+    }
+    
+    #answer1 {
+        grid-column: 2 / span 2;
+    }
+    
+    #answer2 {
+        grid-column: 2 / span 2;
+           
+    }
+    
+    #answer3 {
+        grid-column: 2 / span 2;
+    }
+    
+    #answer4 {
+        grid-column: 2 / span 2;
+    }
+    
+  
+
+}
+
+
+   /* This will be applied on any screen smaller than 575px */
+@media screen and  (max-width: 575px) {
+
+    #answer1:hover{
+        
+        background-color:rgb(35, 95, 82);
+        
+    }
+
+    #answer2:hover{
+        
+        background-color:rgb(35, 95, 82);
+    
+    }
+
+    #answer3:hover{
+        
+        background-color:rgb(35, 95, 82);
+    
+    }
+
+    #answer4:hover{
+        
+        background-color: rgb(35, 95, 82);
+    
+    }
+
+    #submitScore:hover{
+        
+        background-color: rgba(35, 95, 82);
+    
+    }
+
+
+    #mainDiv {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #questionDisplay {
+        grid-column: 2 / span 2;
+        font-size: 15px;
+    }
+  
+
+  }
